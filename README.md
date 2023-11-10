@@ -10,15 +10,6 @@ Welcome to the C++ and Object-Oriented Programming (OOP) repository! This reposi
 <br>
 <br>
 
-## Code Examples
-
-You can find various C++ and OOP code examples in this repository. Feel free to explore and use them for your learning and development projects.
-
-- [Example 1: Basic C++ Program](code_examples/example1.cpp)
-- [Example 2: Introduction to Classes](code_examples/example2.cpp)
-- [Example 3: Inheritance](code_examples/example3.cpp)
-- [Example 4: Polymorphism](code_examples/example4.cpp)
-
 ## Contributing
 
 If you'd like to contribute to this repository by adding code examples, tutorials, or improving existing content, please follow these steps:
