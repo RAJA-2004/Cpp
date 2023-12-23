@@ -44,12 +44,7 @@ class operators{
     friend operators operator --(operators &obj,int);
 
     // BINARY operator overloading
-    operators operator +(operators c){
-        operators temp;
-        temp.x=x+c.x;
-        temp.y=y+c.y;
-        return temp;
-    }
+    friend operators operator +(operators &obj,operators c);
 
     // UNARY operator overloading
     operators operator -(){
@@ -68,9 +63,17 @@ class operators{
     }
 };
 
+operators operator +(operators &obj,operators c){
+        operators temp;
+        temp.x=obj.x+c.x;
+        temp.y=obj.y+c.y;
+        return temp;
+}
+
 operators operator --(operators &obj,int){
     operators temp;
     temp.x=obj.x--;
+    temp.y=--obj.y;
     return temp;
 }
 int main(){
@@ -96,13 +99,17 @@ int main(){
     // i4.Display();
 
     operators k1,k2,k3,k4;
-    k1.setX(100);
-    k2=--k1;
-    k3.setX(102);
-    k4=k3--;
-    k3.Display();
-    k4.Display();
-    k1.Display();
-    k2.Display();
+    // k1.setX(100);
+    // k2=--k1;
+    // k3.setX(102);
+    // k4=k3--;
+    // k3.Display();
+    // k4.Display();
+    // k1.Display();
+    // k2.Display();
+    k1.setData(2,3);
+    k2.setData(3,2);
+    k3=k1+k2;
+    k3.display();
     return 0;
 }
