@@ -270,4 +270,22 @@ int main(){
     // catch(const char* s){
     //     cout << "exception !! fail" << endl;
     // }
+
+    string email;
+    cout << "enter email : ";
+    cin >> email;
+    int count=1;
+    try{
+        for(int i=0;email[i]!='\0';i++){
+            if(email[i]=='@'){
+                count=0;
+            }
+        }
+        if(count==1){
+            throw 0;
+        }
+    }
+    catch(int){
+        cout << "error !!! @ is missing" << endl;
+    }
 }
