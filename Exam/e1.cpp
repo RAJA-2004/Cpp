@@ -249,25 +249,25 @@ int main(){
     // ab a1;
     // a1.print();
 
-    int a,b,c;
-    cout << "enter a : ";
-    cin >> a;
-    cout << "enter b : ";
-    cin >> b;
-    try{
-        if(b==0){
-            throw 0;
-        }
-        c=a/b;
-        if(c==0){
-            throw "fail";
-        }
-        cout << c;
-    }
-    catch(int e){
-        cout << "exception !! division by 0" << endl;
-    }
-    catch(const char* s){
-        cout << "exception !! fail" << endl;
-    }
+    // int a,b,c;
+    // cout << "enter a : ";
+    // cin >> a;
+    // cout << "enter b : ";
+    // cin >> b;
+    // try{
+    //     if(b==0){
+    //         throw 0;
+    //     }
+    //     c=a/b;
+    //     if(c==0){
+    //         throw "fail";
+    //     }
+    //     cout << c;
+    // }
+    // catch(int e){
+    //     cout << "exception !! division by 0" << endl;
+    // }
+    // catch(const char* s){
+    //     cout << "exception !! fail" << endl;
+    // }
 }
