@@ -2,19 +2,19 @@
 using namespace std;
 
 template <class T>  T maxi(T a, T b){
-    if(a>b){
-        return a;
-    }
-    else{
-        return b;
-    }
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout << "a : " << a << endl;
+    cout << "b : " << b << endl;
+    return 0;
 }
 
 int main(){
 
-    cout<<maxi(1,5)<<endl;
-    cout<<maxi(5.3,1.5)<<endl;
-    
+    maxi(1,5);
+    maxi('a','b');
+    maxi(4.5,6.5);
 
     return 0;
 }
